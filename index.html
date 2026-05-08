@@ -243,7 +243,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .verse-quote{font-family:var(--script);font-size:clamp(80px,12vw,140px);color:var(--gold);line-height:.5;margin-bottom:32px;display:block;opacity:.8;}
 .verse-text{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(20px,2.6vw,32px);line-height:1.55;color:var(--accent-deep);letter-spacing:-.01em;margin-bottom:44px;}
 .verse-text .word{display:inline-block}
-.verse-ref{font-family:var(--sans);font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:24px;display:block}
+.verse-ref{font-family:var(--sans);font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:24px;display:block}
 .verse-sig{font-family:var(--script);font-size:36px;color:var(--gold);position:relative;display:inline-block;padding:0 32px;}
 .verse-sig::before,.verse-sig::after{content:"";position:absolute;top:50%;width:24px;height:1px;background:var(--gold);}
 .verse-sig::before{left:-12px}
@@ -265,15 +265,19 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .date-block{text-align:center;position:relative}
 .date-block+.date-block::before{content:"·";position:absolute;left:calc(-1 * clamp(24px,6vw,80px) / 2);top:40%;transform:translateX(-50%);color:var(--gold-soft);font-size:30px;}
 .date-num{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(68px,10vw,124px);line-height:1;color:#F8F5EC;}
-.date-lbl{font-family:var(--sans);font-size:10px;letter-spacing:.55em;text-transform:uppercase;color:rgba(248,245,236,.8);margin-top:18px;padding-left:.55em;font-weight:400;}
+.date-lbl{font-family:var(--sans);font-size:13px;letter-spacing:.45em;text-transform:uppercase;color:rgba(248,245,236,.8);margin-top:18px;padding-left:.45em;font-weight:400;}
 .date-roman{font-family:var(--italiana);font-size:16px;letter-spacing:.4em;color:var(--gold-soft);margin-top:32px;padding-left:.4em;}
 
-/* ============ FAMILIA ============ */
+/* ============ FLORES BOTÁNICAS ============ */
+.flores-h{display:block;width:min(520px,88vw);margin:0 auto;height:auto;opacity:.92}
+.fam-flores-v{display:block;width:min(200px,44vw);margin:28px auto 36px;height:auto;opacity:.9}
+
+/* ============ FAMILIA / HIJOS ============ */
 .familia{max-width:580px;margin:0 auto;text-align:center}
 .familia h2{font-size:clamp(30px,4.5vw,52px);margin-bottom:22px}
 .familia-intro{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(18px,2.2vw,24px);color:var(--ink-soft);line-height:1.9;margin-bottom:44px}
 .fam-group{margin-bottom:36px}
-.fam-role{font-family:var(--sans);font-size:10px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-deep);font-weight:500;padding-left:.5em;margin-bottom:8px}
+.fam-role{font-family:var(--sans);font-size:12px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold-deep);font-weight:500;padding-left:.45em;margin-bottom:8px}
 .fam-name{font-family:var(--script);font-size:clamp(36px,6vw,60px);color:var(--accent-deep);display:block;line-height:1.1}
 .fam-sep{display:flex;align-items:center;gap:16px;margin:28px auto;max-width:240px}
 .fam-sep-line{flex:1;height:1px;background:linear-gradient(to right,transparent,var(--hair-gold),transparent)}
@@ -286,7 +290,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .venue-schedule{margin:20px 0 28px;display:flex;flex-direction:column;gap:0}
 .venue-row{display:grid;grid-template-columns:1fr 24px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid rgba(167,198,255,.18)}
 .venue-row:last-child{border-bottom:none}
-.venue-row-lbl{font-family:var(--italiana);font-size:13px;letter-spacing:.35em;text-transform:uppercase;color:var(--ink-soft);text-align:right}
+.venue-row-lbl{font-family:var(--italiana);font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);text-align:right}
 .venue-row-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);margin:0 auto;opacity:.7}
 .venue-row-time{font-family:var(--display);font-style:italic;font-size:18px;color:var(--accent-deep);text-align:left;padding-left:6px}
 .venue-ico{width:40px;height:40px;margin:0 auto 16px;color:var(--accent-soft)}
@@ -294,7 +298,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .venue-time{font-family:var(--italiana);font-size:14px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-deep);padding-left:.38em;margin-bottom:12px}
 .venue-addr{font-family:var(--display);font-style:italic;font-weight:400;color:var(--ink-soft);font-size:18px;line-height:1.7;margin-bottom:4px}
 .venue-note{font-family:var(--sans);font-size:12px;color:var(--ink-soft);opacity:.65;margin-bottom:8px}
-.venue-btn{display:inline-block;margin-top:22px;padding:12px 26px;font-family:var(--italiana);font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--hair-gold);text-decoration:none;transition:all .3s;cursor:pointer;touch-action:manipulation;min-height:44px;display:inline-flex;align-items:center;}
+.venue-btn{display:inline-block;margin-top:22px;padding:12px 26px;font-family:var(--italiana);font-size:15px;letter-spacing:.35em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--hair-gold);text-decoration:none;transition:all .3s;cursor:pointer;touch-action:manipulation;min-height:44px;display:inline-flex;align-items:center;}
 .venue-btn:hover,.venue-btn:active{background:var(--accent-deep);color:#fff;border-color:var(--accent-deep)}
 
 /* ============ COUNTDOWN ============ */
@@ -303,7 +307,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .cd-block{display:flex;flex-direction:column;align-items:center;gap:10px;padding:26px 8px;background:var(--paper);border:1px solid var(--hair-gold);position:relative;}
 .cd-block::before{content:"";position:absolute;inset:6px;border:1px solid rgba(167,198,255,.1);pointer-events:none}
 .cd-num{font-family:var(--display);font-weight:400;font-size:clamp(38px,8vw,64px);color:var(--accent-deep);line-height:1;font-variant-numeric:tabular-nums;display:block;}
-.cd-label{font-family:var(--italiana);font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:var(--gold-deep);padding-left:.36em}
+.cd-label{font-family:var(--italiana);font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);padding-left:.3em}
 
 /* ============ ITINERARY (card format) ============ */
 .itin-card{
@@ -345,19 +349,19 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 }
 @media(max-width:440px){
   .itin-row{grid-template-columns:60px 32px 1fr}
-  .itin-t{font-size:15px;padding-right:8px}
-  .itin-lbl{font-size:13px;padding-left:8px;letter-spacing:.22em}
-  .itin-place{font-size:13px}
+  .itin-t{font-size:16px;padding-right:8px}
+  .itin-lbl{font-size:14px;padding-left:8px;letter-spacing:.2em}
+  .itin-place{font-size:14px}
 }
 
 /* ============ DRESS ============ */
 .dress{text-align:center}
 .dress h2{font-size:clamp(36px,5vw,56px);margin-bottom:20px}
 .dress-sub{font-family:var(--script);color:var(--gold-deep);font-size:32px;margin-bottom:18px;line-height:1}
-.dress-note{font-family:var(--italiana);font-size:13px;letter-spacing:.35em;text-transform:uppercase;color:var(--ink-soft);padding-left:.35em;margin-bottom:48px}
+.dress-note{font-family:var(--italiana);font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);padding-left:.35em;margin-bottom:48px}
 .dress-duo{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0;max-width:480px;margin:0 auto;}
 .dress-person{text-align:center;padding:28px 16px}
-.dress-label{font-family:var(--sans);font-size:10px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-deep);font-weight:500;padding-left:.5em;margin-top:16px;}
+.dress-label{font-family:var(--sans);font-size:12px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold-deep);font-weight:500;padding-left:.45em;margin-top:16px;}
 .dress-divider{width:1px;height:100px;background:var(--hair-gold)}
 .dress-bouquet{display:block;width:min(200px,48vw);margin:0 auto 44px;height:auto;opacity:.9}
 
@@ -387,7 +391,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .album-inner{text-align:center;max-width:600px;margin:0 auto}
 .album-text{font-family:var(--serif);font-size:clamp(16px,1.8vw,19px);color:var(--ink-soft);line-height:1.85;margin-bottom:40px}
 .album-qr{display:inline-block;padding:18px;background:var(--paper);border:1px solid var(--hair-gold);border-radius:4px;box-shadow:0 6px 24px rgba(26,45,74,.1);}
-.album-link{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--gold-deep);text-decoration:none;display:inline-block;margin-top:18px;border-bottom:1px solid var(--hair-gold)}
+.album-link{font-family:var(--sans);font-size:13px;letter-spacing:.18em;color:var(--gold-deep);text-decoration:none;display:inline-block;margin-top:18px;border-bottom:1px solid var(--hair-gold)}
 
 /* ============ RSVP ============ */
 .rsvp-inner{text-align:center;max-width:680px;margin:0 auto}
@@ -409,7 +413,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
   display:inline-flex;align-items:center;gap:12px;
   padding:17px 42px;
   border:1px solid var(--accent-deep);background:var(--accent-deep);
-  font-family:var(--sans);font-size:11px;font-weight:500;
+  font-family:var(--sans);font-size:13px;font-weight:500;
   letter-spacing:.4em;text-transform:uppercase;
   color:#F8F5EC;text-decoration:none;
   cursor:pointer;min-height:54px;position:relative;overflow:hidden;
@@ -418,7 +422,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 }
 .rsvp-btn::before{content:"";position:absolute;inset:0;background:var(--gold-deep);transform:translateY(101%);transition:transform .5s cubic-bezier(.2,.7,.2,1);z-index:-1;}
 .rsvp-btn:hover::before{transform:translateY(0)}
-.rsvp-date{font-family:var(--italiana);font-size:13px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold-deep);margin-top:28px;padding-left:.45em;display:block}
+.rsvp-date{font-family:var(--italiana);font-size:15px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-deep);margin-top:28px;padding-left:.45em;display:block}
 
 /* ============ MUSIC TOGGLE ============ */
 #music-toggle{
@@ -996,11 +1000,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       <div class="msg reveal">
         <div class="eyebrow">Con el corazón lleno de amor</div>
         <p class="msg-quote">
-          "Deseamos que seas parte de este capítulo tan especial en nuestra historia de amor."
+          "El amor encontró su camino, y hoy deseamos que seas parte de este capítulo tan especial en nuestra historia."
         </p>
         <p class="msg-body">
-          Nos unimos ante Dios y quienes más amamos para comenzar juntos el capítulo más hermoso de nuestra vida.
-          Con la bendición de nuestras familias y el amor que hemos construido, te invitamos a celebrar este momento único con nosotros.<br><br>
+          Ante Dios y quienes más amamos, elegimos unirnos y construir juntos algo hermoso y duradero.
+          Con gratitud por cada camino recorrido y esperanza por todo lo que está por venir, te invitamos a acompañarnos en este momento único.<br><br>
           <em>Tu presencia hará que este día sea aún más especial e inolvidable para nosotros.</em>
         </p>
         <!-- Leaf divider -->
@@ -1017,6 +1021,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
           </svg>
           <div class="leaf-div-line" style="background:linear-gradient(to left,transparent,rgba(167,198,255,.45))"></div>
         </div>
+        <img src="flores-horizontal.png" alt="" class="flores-h reveal" aria-hidden="true" loading="lazy" style="margin-top:44px">
       </div>
     </div>
   </section>
@@ -1068,22 +1073,24 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 
   <div class="seam" style="--from:#1a2d4a;--to:var(--bg)" aria-hidden="true"></div>
 
-  <!-- ==================== FAMILIA ==================== -->
+  <!-- ==================== HIJOS ==================== -->
   <section class="sec sec-bg">
     <div class="container">
       <div class="familia reveal">
-        <div class="eyebrow">Con el amor de</div>
-        <h2>Nuestras <em>familias</em></h2>
-        <p class="familia-intro">Con inmensa gratitud y amor celebramos rodeados de quienes más queremos.</p>
+        <div class="eyebrow">La alegría de nuestra familia</div>
+        <h2>Nuestros <em>hijos</em></h2>
+        <p class="familia-intro">Lo más valioso que traemos a esta unión es el amor de nuestros hijos, quienes llenan de luz y alegría cada paso de este camino.</p>
+
+        <img src="flores-vertical.png" alt="" class="fam-flores-v reveal" aria-hidden="true">
 
         <div class="fam-sep"><div class="fam-sep-line"></div><div class="fam-sep-dot"></div><div class="fam-sep-line"></div></div>
         <div class="fam-group">
-          <div class="fam-role">Padres del novio</div>
+          <div class="fam-role">Hijos del novio</div>
           <span class="fam-name" style="color:var(--ink-soft);font-size:clamp(28px,4vw,44px);font-family:var(--italiana);letter-spacing:.12em">Próximamente</span>
         </div>
         <div class="fam-sep"><div class="fam-sep-line"></div><div class="fam-sep-dot"></div><div class="fam-sep-line"></div></div>
         <div class="fam-group">
-          <div class="fam-role">Padres de la novia</div>
+          <div class="fam-role">Hijos de la novia</div>
           <span class="fam-name" style="color:var(--ink-soft);font-size:clamp(28px,4vw,44px);font-family:var(--italiana);letter-spacing:.12em">Próximamente</span>
         </div>
         <div class="fam-sep"><div class="fam-sep-line"></div><div class="fam-sep-dot"></div><div class="fam-sep-line"></div></div>
