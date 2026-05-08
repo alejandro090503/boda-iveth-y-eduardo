@@ -275,10 +275,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .loc-btn::before{content:"";position:absolute;inset:0;background:var(--accent-deep);transform:translateY(101%);transition:transform .5s cubic-bezier(.2,.7,.2,1);z-index:-1;}
 .loc-btn:hover{color:var(--paper)}
 .loc-btn:hover::before{transform:translateY(0)}
-.loc-map-wrap{width:100%;height:320px;border-radius:2px;overflow:hidden;border:1px solid var(--hair-gold);position:relative;}
-.loc-map-wrap iframe{display:block}
 .loc-pronto{padding:48px 32px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-soft);line-height:1.7}
-@media(max-width:600px){.loc-map-wrap{height:240px}}
 
 /* ============ COUNTDOWN ============ */
 .countdown{text-align:center;padding:min(14vh,120px) 0}
@@ -466,6 +463,20 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
 /* ============ DRESS BOUQUET ============ */
 .dress-bouquet{display:block;width:min(220px,50vw);margin:0 auto 52px;height:auto;opacity:.9}
 
+/* ============ HERO GEO FRAME ============ */
+.hero-geo-frame{
+  position:absolute;inset:clamp(18px,3vw,40px);
+  z-index:0;pointer-events:none;overflow:visible;
+}
+
+/* ============ SECTION BOTANICAL CORNERS ============ */
+.sec-bota-corner{
+  position:absolute;pointer-events:none;z-index:0;opacity:.16;overflow:visible;
+}
+
+/* ============ PADRINOS INLINE SEPARATOR ============ */
+.padrinos-inl-sep{display:block;width:min(300px,68vw);margin:0 auto 52px;height:auto;opacity:.6}
+
 /* ============ PETAL PARTICLE ============ */
 .particle--petal{
   width:10px;height:15px;
@@ -525,6 +536,21 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
     <div class="hero-bg-overlay"></div>
     <div class="hero-frame"></div>
     <div class="hero-frame-corners"></div>
+    <!-- Marco geométrico poligonal – cortes de esquina -->
+    <svg class="hero-geo-frame" viewBox="0 0 360 640" preserveAspectRatio="none" fill="none" aria-hidden="true">
+      <polygon points="44,0 316,0 360,42 360,598 316,640 44,640 0,598 0,42"
+        stroke="rgba(167,198,255,.24)" stroke-width="1.1" fill="none"/>
+      <line x1="44" y1="0" x2="84" y2="0" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="276" y1="0" x2="316" y2="0" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="44" y1="640" x2="84" y2="640" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="276" y1="640" x2="316" y2="640" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="0" y1="42" x2="0" y2="86" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="0" y1="554" x2="0" y2="598" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="360" y1="42" x2="360" y2="86" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <line x1="360" y1="554" x2="360" y2="598" stroke="rgba(167,198,255,.46)" stroke-width="1.4"/>
+      <polygon points="54,10 306,10 350,52 350,588 306,630 54,630 10,588 10,52"
+        stroke="rgba(167,198,255,.09)" stroke-width=".7" fill="none"/>
+    </svg>
     <div class="hero-content">
       <!-- Corona botánica – ilustración floral -->
       <svg class="hero-botanical-crown" viewBox="0 0 520 230" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -616,6 +642,36 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
         <circle cx="122" cy="96" r="2.5" fill="rgba(255,255,255,.65)" stroke="#c5d8ec" stroke-width=".44"/>
         <circle cx="385" cy="103" r="3.5" fill="rgba(255,255,255,.72)" stroke="#c5d8ec" stroke-width=".5"/>
         <circle cx="398" cy="96" r="2.5" fill="rgba(255,255,255,.65)" stroke="#c5d8ec" stroke-width=".44"/>
+        <!-- Rosita acento izquierda -->
+        <g transform="translate(44,112)">
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(0) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(51) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(102) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(153) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(204) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(255) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(306) translate(5.5,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(26) translate(3,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(128) translate(3,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(230) translate(3,0)"/>
+          <circle r="4" fill="rgba(200,188,212,.86)"/>
+          <circle r="1.8" fill="rgba(180,162,196,.93)"/>
+        </g>
+        <!-- Rosita acento derecha -->
+        <g transform="translate(476,112)">
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(0) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(51) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(102) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(153) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(204) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(255) translate(5.5,0)"/>
+          <ellipse rx="9" ry="4.2" fill="rgba(255,248,255,.58)" transform="rotate(306) translate(5.5,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(26) translate(3,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(128) translate(3,0)"/>
+          <ellipse rx="6" ry="3.8" fill="rgba(220,208,230,.7)" transform="rotate(230) translate(3,0)"/>
+          <circle r="4" fill="rgba(200,188,212,.86)"/>
+          <circle r="1.8" fill="rgba(180,162,196,.93)"/>
+        </g>
         <!-- Tulipán izquierdo -->
         <g transform="translate(77,90)">
           <path d="M0,32 C-9,22 -11,6 -7,-8 C-3,-18 3,-18 7,-8 C11,6 9,22 0,32 Z" fill="rgba(255,255,255,.82)" stroke="#c5d8ec" stroke-width=".7"/>
@@ -649,6 +705,42 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
   <!-- UN NUEVO CAPÍTULO -->
   <section class="section-bg new-chapter">
     <div class="new-chapter-wm" aria-hidden="true">I &amp; E</div>
+    <!-- Esquina botánica superior derecha -->
+    <svg class="sec-bota-corner" style="top:0;right:0;width:190px;height:190px" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+      <path d="M200,0 Q128,72 56,144" stroke="#8baac4" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M200,22 Q140,84 100,162" stroke="#a7c6ff" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+      <ellipse cx="158" cy="38" rx="19" ry="9.5" fill="rgba(168,200,215,.55)" transform="rotate(-44,158,38)"/>
+      <ellipse cx="150" cy="47" rx="16" ry="8" fill="rgba(140,180,200,.45)" transform="rotate(-18,150,47)"/>
+      <ellipse cx="118" cy="78" rx="20" ry="10" fill="rgba(168,200,215,.52)" transform="rotate(-40,118,78)"/>
+      <ellipse cx="110" cy="87" rx="17" ry="8.5" fill="rgba(140,180,200,.42)" transform="rotate(-14,110,87)"/>
+      <ellipse cx="80" cy="116" rx="17" ry="8.5" fill="rgba(168,200,215,.48)" transform="rotate(-38,80,116)"/>
+      <g transform="translate(164,30)">
+        <ellipse rx="11" ry="5" fill="rgba(255,248,255,.65)" transform="rotate(0) translate(6,0)"/>
+        <ellipse rx="11" ry="5" fill="rgba(255,248,255,.65)" transform="rotate(72) translate(6,0)"/>
+        <ellipse rx="11" ry="5" fill="rgba(255,248,255,.65)" transform="rotate(144) translate(6,0)"/>
+        <ellipse rx="11" ry="5" fill="rgba(255,248,255,.65)" transform="rotate(216) translate(6,0)"/>
+        <ellipse rx="11" ry="5" fill="rgba(255,248,255,.65)" transform="rotate(288) translate(6,0)"/>
+        <circle r="5.5" fill="rgba(255,236,212,.9)"/>
+        <circle r="2.5" fill="rgba(235,210,180,.97)"/>
+      </g>
+      <circle cx="190" cy="78" r="2" fill="rgba(167,198,255,.55)"/>
+      <circle cx="184" cy="90" r="1.4" fill="rgba(167,198,255,.38)"/>
+    </svg>
+    <!-- Esquina botánica inferior izquierda -->
+    <svg class="sec-bota-corner" style="bottom:0;left:0;width:165px;height:165px;transform:rotate(180deg)" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+      <path d="M200,0 Q128,72 56,144" stroke="#8baac4" stroke-width="1.7" stroke-linecap="round"/>
+      <ellipse cx="158" cy="38" rx="19" ry="9.5" fill="rgba(168,200,215,.5)" transform="rotate(-44,158,38)"/>
+      <ellipse cx="118" cy="78" rx="20" ry="10" fill="rgba(168,200,215,.46)" transform="rotate(-40,118,78)"/>
+      <ellipse cx="80" cy="116" rx="17" ry="8.5" fill="rgba(168,200,215,.42)" transform="rotate(-38,80,116)"/>
+      <g transform="translate(164,30)">
+        <ellipse rx="10" ry="4.5" fill="rgba(255,248,255,.6)" transform="rotate(0) translate(6,0)"/>
+        <ellipse rx="10" ry="4.5" fill="rgba(255,248,255,.6)" transform="rotate(72) translate(6,0)"/>
+        <ellipse rx="10" ry="4.5" fill="rgba(255,248,255,.6)" transform="rotate(144) translate(6,0)"/>
+        <ellipse rx="10" ry="4.5" fill="rgba(255,248,255,.6)" transform="rotate(216) translate(6,0)"/>
+        <ellipse rx="10" ry="4.5" fill="rgba(255,248,255,.6)" transform="rotate(288) translate(6,0)"/>
+        <circle r="5" fill="rgba(255,236,212,.86)"/>
+      </g>
+    </svg>
     <div class="container">
       <!-- Separador botánico -->
       <svg class="botanic-sep" viewBox="0 0 340 80" fill="none" aria-hidden="true">
@@ -769,6 +861,35 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
     <div class="container">
       <div class="eyebrow">Quienes nos acompañan</div>
       <h2>Nuestros <em>padrinos</em></h2>
+      <!-- Separador botánico horizontal -->
+      <svg class="padrinos-inl-sep" viewBox="0 0 300 44" fill="none" aria-hidden="true">
+        <line x1="0" y1="22" x2="90" y2="22" stroke="rgba(167,198,255,.5)" stroke-width=".9"/>
+        <line x1="210" y1="22" x2="300" y2="22" stroke="rgba(167,198,255,.5)" stroke-width=".9"/>
+        <g transform="translate(150,22)">
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(0) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(51) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(102) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(153) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(204) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(255) translate(8,0)"/>
+          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(306) translate(8,0)"/>
+          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(26) translate(5,0)"/>
+          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(128) translate(5,0)"/>
+          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(230) translate(5,0)"/>
+          <circle r="6" fill="rgba(200,192,215,.88)"/>
+          <circle r="2.8" fill="rgba(180,168,200,.95)"/>
+        </g>
+        <ellipse cx="108" cy="16" rx="15" ry="7.5" fill="rgba(168,200,215,.65)" transform="rotate(-28,108,16)"/>
+        <ellipse cx="100" cy="26" rx="13" ry="6.5" fill="rgba(140,180,200,.52)" transform="rotate(-10,100,26)"/>
+        <ellipse cx="122" cy="11" rx="12" ry="5.8" fill="rgba(168,200,215,.55)" transform="rotate(-40,122,11)"/>
+        <ellipse cx="192" cy="16" rx="15" ry="7.5" fill="rgba(168,200,215,.65)" transform="rotate(28,192,16)"/>
+        <ellipse cx="200" cy="26" rx="13" ry="6.5" fill="rgba(140,180,200,.52)" transform="rotate(10,200,26)"/>
+        <ellipse cx="178" cy="11" rx="12" ry="5.8" fill="rgba(168,200,215,.55)" transform="rotate(40,178,11)"/>
+        <circle cx="74" cy="22" r="1.8" fill="rgba(167,198,255,.55)"/>
+        <circle cx="226" cy="22" r="1.8" fill="rgba(167,198,255,.55)"/>
+        <circle cx="58" cy="22" r="1.2" fill="rgba(167,198,255,.38)"/>
+        <circle cx="242" cy="22" r="1.2" fill="rgba(167,198,255,.38)"/>
+      </svg>
       <div class="padrinos-grid">
         <div class="padrino-card">
           <div class="padrino-icon">
@@ -841,14 +962,7 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
           <div class="loc-type">Ceremonia religiosa</div>
           <div class="loc-time">6:30 pm</div>
           <div class="loc-addr">Saltillo, Coahuila</div>
-          <div class="loc-map-wrap">
-            <iframe
-              src="https://maps.google.com/maps?q=Saltillo,+Coahuila&hl=es&z=14&output=embed"
-              width="100%" height="100%" style="border:0" allowfullscreen loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Ubicación ceremonia religiosa, Saltillo"></iframe>
-          </div>
-          <a class="loc-btn" href="https://maps.app.goo.gl/kBG7hAGtXbgGWfiv5" target="_blank" rel="noopener" style="margin-top:32px">¿Cómo llegar?</a>
+          <a class="loc-btn" href="https://maps.app.goo.gl/kBG7hAGtXbgGWfiv5" target="_blank" rel="noopener">¿Cómo llegar?</a>
         </article>
 
         <!-- Recepción -->
