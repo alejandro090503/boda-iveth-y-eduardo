@@ -243,14 +243,6 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .familia-names{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--accent-deep);line-height:1.4}
 .pending-tag{font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);opacity:.55;font-style:normal;font-size:13px}
 
-/* ============ PADRINOS ============ */
-.padrinos{text-align:center}
-.padrinos h2{font-size:clamp(36px,5vw,60px);margin-bottom:20px}
-.padrinos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;max-width:1000px;margin:56px auto 0}
-.padrino-card{background:var(--bg);padding:36px 28px;border:1px solid var(--hair-gold);text-align:center;position:relative;}
-.padrino-icon{margin:0 auto 18px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--gold)}
-.padrino-tipo{font-family:var(--sans);font-size:10px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-deep);padding-left:.5em;margin-bottom:14px;font-weight:500}
-.padrino-names{font-family:var(--display);font-style:italic;font-size:clamp(17px,2vw,21px);color:var(--accent-deep);line-height:1.45}
 
 /* ============ UBICACIONES ============ */
 .locs h2{text-align:center;font-size:clamp(36px,5vw,60px);margin-bottom:20px}
@@ -474,8 +466,6 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
   position:absolute;pointer-events:none;z-index:0;opacity:.16;overflow:visible;
 }
 
-/* ============ PADRINOS INLINE SEPARATOR ============ */
-.padrinos-inl-sep{display:block;width:min(300px,68vw);margin:0 auto 52px;height:auto;opacity:.6}
 
 /* ============ PETAL PARTICLE ============ */
 .particle--petal{
@@ -854,83 +844,7 @@ footer{background:var(--accent-deep);padding:min(16vh,140px) 0}
     </div>
   </section>
 
-  <div class="seam" style="--from:var(--surface);--to:var(--paper)" aria-hidden="true"></div>
-
-  <!-- PADRINOS -->
-  <section class="section-paper padrinos">
-    <div class="container">
-      <div class="eyebrow">Quienes nos acompañan</div>
-      <h2>Nuestros <em>padrinos</em></h2>
-      <!-- Separador botánico horizontal -->
-      <svg class="padrinos-inl-sep" viewBox="0 0 300 44" fill="none" aria-hidden="true">
-        <line x1="0" y1="22" x2="90" y2="22" stroke="rgba(167,198,255,.5)" stroke-width=".9"/>
-        <line x1="210" y1="22" x2="300" y2="22" stroke="rgba(167,198,255,.5)" stroke-width=".9"/>
-        <g transform="translate(150,22)">
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(0) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(51) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(102) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(153) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(204) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(255) translate(8,0)"/>
-          <ellipse rx="13" ry="5.8" fill="rgba(255,248,255,.68)" transform="rotate(306) translate(8,0)"/>
-          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(26) translate(5,0)"/>
-          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(128) translate(5,0)"/>
-          <ellipse rx="8.5" ry="5.2" fill="rgba(220,210,232,.78)" transform="rotate(230) translate(5,0)"/>
-          <circle r="6" fill="rgba(200,192,215,.88)"/>
-          <circle r="2.8" fill="rgba(180,168,200,.95)"/>
-        </g>
-        <ellipse cx="108" cy="16" rx="15" ry="7.5" fill="rgba(168,200,215,.65)" transform="rotate(-28,108,16)"/>
-        <ellipse cx="100" cy="26" rx="13" ry="6.5" fill="rgba(140,180,200,.52)" transform="rotate(-10,100,26)"/>
-        <ellipse cx="122" cy="11" rx="12" ry="5.8" fill="rgba(168,200,215,.55)" transform="rotate(-40,122,11)"/>
-        <ellipse cx="192" cy="16" rx="15" ry="7.5" fill="rgba(168,200,215,.65)" transform="rotate(28,192,16)"/>
-        <ellipse cx="200" cy="26" rx="13" ry="6.5" fill="rgba(140,180,200,.52)" transform="rotate(10,200,26)"/>
-        <ellipse cx="178" cy="11" rx="12" ry="5.8" fill="rgba(168,200,215,.55)" transform="rotate(40,178,11)"/>
-        <circle cx="74" cy="22" r="1.8" fill="rgba(167,198,255,.55)"/>
-        <circle cx="226" cy="22" r="1.8" fill="rgba(167,198,255,.55)"/>
-        <circle cx="58" cy="22" r="1.2" fill="rgba(167,198,255,.38)"/>
-        <circle cx="242" cy="22" r="1.2" fill="rgba(167,198,255,.38)"/>
-      </svg>
-      <div class="padrinos-grid">
-        <div class="padrino-card">
-          <div class="padrino-icon">
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 6c0-1.1.9-2 2-2h7a3 3 0 0 1 3 3v13H4a2 2 0 0 1-2-2V6z"/>
-              <path d="M22 6c0-1.1-.9-2-2-2h-7a3 3 0 0 0-3 3v13h10a2 2 0 0 0 2-2V6z"/>
-              <path d="M12 7v13"/>
-              <path d="M5 10h4M5 13h4M15 10h4M15 13h4"/>
-            </svg>
-          </div>
-          <div class="padrino-tipo">Biblia</div>
-          <div class="padrino-names pending-tag">Próximamente</div>
-        </div>
-        <div class="padrino-card">
-          <div class="padrino-icon">
-            <svg width="42" height="38" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 14 C17 8, 6 8, 6 14 C6 20, 17 20, 21 14 C25 8, 36 8, 36 14 C36 20, 25 20, 21 14Z"/>
-              <line x1="21" y1="14" x2="21" y2="24"/>
-              <path d="M17 24 Q21 27 25 24"/>
-            </svg>
-          </div>
-          <div class="padrino-tipo">Lazo</div>
-          <div class="padrino-names pending-tag">Próximamente</div>
-        </div>
-        <div class="padrino-card">
-          <div class="padrino-icon">
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="6" rx="7" ry="2.5"/>
-              <path d="M5 6v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5V6"/>
-              <path d="M5 9v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5V9"/>
-              <path d="M5 12v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-3"/>
-            </svg>
-          </div>
-          <div class="padrino-tipo">Arras</div>
-          <div class="padrino-names pending-tag">Próximamente</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
+  <div class="seam" style="--from:var(--surface);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- UBICACIONES -->
   <section class="section-surface locs">
