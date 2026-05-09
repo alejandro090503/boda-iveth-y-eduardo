@@ -279,6 +279,11 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
   background:url('flores-vertical.png') center center/auto 85% no-repeat;
   mix-blend-mode:multiply;opacity:.6;pointer-events:none;z-index:0;
 }
+.sec-fondo-marco::before{
+  content:"";position:absolute;inset:0;
+  background:url('marco-esquinas.png') center/100% 100% no-repeat;
+  mix-blend-mode:multiply;opacity:.82;pointer-events:none;z-index:0;
+}
 
 /* ============ FAMILIA / HIJOS ============ */
 .familia{max-width:580px;margin:0 auto;text-align:center}
@@ -1036,7 +1041,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   <div class="seam" style="--from:var(--bg);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- ==================== VERSÍCULO ==================== -->
-  <section class="sec sec-surface">
+  <section class="sec sec-surface sec-fondo-marco">
     <div class="container">
       <div class="verse-wrap reveal">
         <svg class="verse-ornament" viewBox="0 0 360 80" fill="none" aria-hidden="true">
