@@ -268,9 +268,17 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .date-lbl{font-family:var(--sans);font-size:13px;letter-spacing:.45em;text-transform:uppercase;color:rgba(248,245,236,.8);margin-top:18px;padding-left:.45em;font-weight:400;}
 .date-roman{font-family:var(--italiana);font-size:16px;letter-spacing:.4em;color:var(--gold-soft);margin-top:32px;padding-left:.4em;}
 
-/* ============ FLORES BOTÁNICAS ============ */
-.flores-h{display:block;width:min(520px,88vw);margin:0 auto;height:auto;opacity:.92}
-.fam-flores-v{display:block;width:min(200px,44vw);margin:28px auto 36px;height:auto;opacity:.9}
+/* ============ FONDOS BOTÁNICOS ============ */
+.sec-fondo-h::before{
+  content:"";position:absolute;inset:0;
+  background:url('flores-horizontal.png') center bottom/65% auto no-repeat;
+  mix-blend-mode:multiply;opacity:.7;pointer-events:none;z-index:0;
+}
+.sec-fondo-v::before{
+  content:"";position:absolute;inset:0;
+  background:url('flores-vertical.png') center center/auto 85% no-repeat;
+  mix-blend-mode:multiply;opacity:.6;pointer-events:none;z-index:0;
+}
 
 /* ============ FAMILIA / HIJOS ============ */
 .familia{max-width:580px;margin:0 auto;text-align:center}
@@ -954,7 +962,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   <div class="seam" style="--from:transparent;--to:var(--bg)" aria-hidden="true"></div>
 
   <!-- ==================== MENSAJE ==================== -->
-  <section class="sec sec-bg bota-sec">
+  <section class="sec sec-bg bota-sec sec-fondo-h">
     <!-- Esquina botánica superior derecha -->
     <svg class="sec-bota-corner" style="top:0;right:0;width:200px;height:200px;opacity:.18" viewBox="0 0 200 200" fill="none" aria-hidden="true">
       <path d="M200,0 Q128,72 56,144" stroke="#8baac4" stroke-width="1.8" stroke-linecap="round"/>
@@ -1021,7 +1029,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
           </svg>
           <div class="leaf-div-line" style="background:linear-gradient(to left,transparent,rgba(167,198,255,.45))"></div>
         </div>
-        <img src="flores-horizontal.png" alt="" class="flores-h reveal" aria-hidden="true" loading="lazy" style="margin-top:44px">
       </div>
     </div>
   </section>
@@ -1074,14 +1081,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   <div class="seam" style="--from:#1a2d4a;--to:var(--bg)" aria-hidden="true"></div>
 
   <!-- ==================== HIJOS ==================== -->
-  <section class="sec sec-bg">
+  <section class="sec sec-bg sec-fondo-v">
     <div class="container">
       <div class="familia reveal">
         <div class="eyebrow">La alegría de nuestra familia</div>
         <h2>Nuestros <em>hijos</em></h2>
         <p class="familia-intro">Lo más valioso que traemos a esta unión es el amor de nuestros hijos, quienes llenan de luz y alegría cada paso de este camino.</p>
-
-        <img src="flores-vertical.png" alt="" class="fam-flores-v reveal" aria-hidden="true">
 
         <div class="fam-sep"><div class="fam-sep-line"></div><div class="fam-sep-dot"></div><div class="fam-sep-line"></div></div>
         <div class="fam-group">
